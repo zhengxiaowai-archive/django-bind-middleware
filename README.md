@@ -5,3 +5,17 @@
 
 把 Json 请求的数据绑定到 request 中
 
+支持 String、List、Object
+
+## Usage
+
+添加到 settings 的 middleware 中
+
+在 settings 中设置 REQUIRE_REQUEST_DATA
+
+```python
+
+REQUIRE_REQUEST_DATA = ['name', 'address']
+
+```
+
