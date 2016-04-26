@@ -14,6 +14,8 @@
 ## Usage
 
 添加到 settings 的 middleware 中
+
+```python
 DDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -21,7 +23,6 @@ DDLEWARE_CLASSES = (
     ...
     'django_bind_middleware.middleware.BindRequestMiddleware'
 )
-```python
 
 ```
 
