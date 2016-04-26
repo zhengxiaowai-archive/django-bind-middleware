@@ -7,9 +7,23 @@
 
 支持 String、List、Object
 
+## Installation
+
+```pip install django-bind-middleware```
+
 ## Usage
 
 添加到 settings 的 middleware 中
+DDLEWARE_CLASSES = (
+    'django.middleware.common.CommonMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'startup.do.work.FindProductMarketFitMiddleware',
+    ...
+    'django_bind_middleware.middleware.BindRequestMiddleware'
+)
+```python
+
+```
 
 在 settings 中设置 REQUIRE_REQUEST_DATA
 
@@ -19,3 +33,8 @@ REQUIRE_REQUEST_DATA = ['name', 'address']
 
 ```
 
+如果不存在绑定值为 None.
+
+## LICENSE
+
+MIT
